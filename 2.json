@@ -1,0 +1,8 @@
+{
+    "message": "39% of the available compute cores hours are getting wasted",
+    "cpuComputeAvailable": "4 h",
+    "cpuComputeUsed": "2.44 h",
+    "wastage": "39%",
+    "executorRuntime": "2.40 h",
+    "driverRuntime": "24 min"
+  }

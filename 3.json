@@ -1,0 +1,6 @@
+{
+	"message": "You are wasting 13g of memory",
+	"memoryUnitAvailable": "25g",
+  "peakMemoryUsed": "12g",
+  "wastage": "13g" 
+}

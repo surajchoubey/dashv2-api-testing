@@ -1,0 +1,23 @@
+[
+    {
+      "bottleneckMessage": "heavy disk I/O(spill to disk) causing your application slow",
+      "Severity": "High",
+      "bottleneckMessageDetails": "spill problem is found in following queries: 1, 2, 3",
+      "queryIds": [1, 2, 3],
+      "recommendations": [ "Use shuffle partition size of 245 to avoid spill problem."],
+      "bottleneckURL": "www.spilltab.com"
+  },
+  {
+      "bottleneckMessage": "imbalance data read(skew problem) causing inefficient resource utilisation",
+      "severity": "moderate",
+      "bottleneckMessageDetails": "data read imbalance is found in following queries: 5",
+      "queryIds": [5],
+      "recommendations": [ "Use salting", "Use AQE", "Try to shift to BHJ if possible"]
+  },
+  {
+      "bottleneckMessage": "heavy disk I/O(spill to disk) causing your application slow",
+      "severity": "High",
+      "bottleneckDetails": "spill problem is found in following queries: 1, 2, 3",
+      "recommendations": [ "use shuffle partition size of 245 to avoid spill problem"]
+  }
+  ]

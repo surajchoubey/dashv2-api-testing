@@ -1,0 +1,8 @@
+{
+	"bottleneckType": "your application is cpu and shuffle bound",
+	"recommendations": [
+	"You could reduce your application runtime to 9min by increasing cpu cores size from 16 to 32",
+	"Try to use shuffle service to improve shuffle runtime", 
+    "shuffle runtime could also improved by avoiding repartition or use of map side join in your application"
+    ]
+}
