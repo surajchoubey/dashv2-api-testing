@@ -1,15 +1,9 @@
-[ {
-  "bottleneckMessage" : "Memory configuration is not optimal",
-  "severity" : "high",
-  "bottleneckMessageDetails" : "Your executor memory configuration is not optimal",
-  "queryIds" : [ ],
-  "recommendations" : [ "Current set executor memory: 6442450944", "Recommended executor memory: 4257218560" ],
-  "bottleneckURL" : "/history/application_1663134638334_0030/ZettaProf/analysis/utilization/"
-}, {
-  "bottleneckMessage" : "Application runtime could be improved by 1.9X",
-  "severity" : "high",
-  "bottleneckMessageDetails" : "With increase of core count your application runtime could reduced from 576.88s to 309.413s",
-  "queryIds" : [ ],
-  "recommendations" : [ "Increase your core count from 45 to 90" ],
-  "bottleneckURL" : "/history/application_1663134638334_0030/ZettaProf/simulator"
-} ]
+{
+    "bottleneckType": "Your application is CPU bound, Memory bound, Shuffle bound and IO bound",
+    "recommendations": [
+        "add more cpu core to improve your application runtime",
+        "increase executor memory to improve your application runtime",
+        "try to reduce shuffle with map side joins, and use nvme and shuffle services for better result",
+        "use filter appropriately to reduce the IO, also check if partitioning/bucketing of table could be helpful for your queries"
+    ]
+}
