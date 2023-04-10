@@ -1,23 +1,22 @@
-[
-    {
-      "bottleneckMessage": "heavy disk I/O(spill to disk) causing your application slow",
-      "Severity": "High",
-      "bottleneckMessageDetails": "spill problem is found in following queries: 1, 2, 3",
-      "queryIds": [1, 2, 3],
-      "recommendations": [ "Use shuffle partition size of 245 to avoid spill problem."],
-      "bottleneckURL": "www.spilltab.com"
-  },
-  {
-      "bottleneckMessage": "imbalance data read(skew problem) causing inefficient resource utilisation",
-      "severity": "moderate",
-      "bottleneckMessageDetails": "data read imbalance is found in following queries: 5",
-      "queryIds": [5],
-      "recommendations": [ "Use salting", "Use AQE", "Try to shift to BHJ if possible"]
-  },
-  {
-      "bottleneckMessage": "heavy disk I/O(spill to disk) causing your application slow",
-      "severity": "High",
-      "bottleneckDetails": "spill problem is found in following queries: 1, 2, 3",
-      "recommendations": [ "use shuffle partition size of 245 to avoid spill problem"]
-  }
-  ]
+[ {
+  "bottleneckMessage" : "Heavy disk I/O(spill to disk) causing your application slow",
+  "severity" : "high",
+  "bottleneckMessageDetails" : "spill problem is found in following queries: 2",
+  "queryIds" : [ 2 ],
+  "recommendations" : [ "use 8460 as shuffle partition size instead of 90 to avoid/reduce spill problem", "You could also increase your executor memory size to avoid spill" ],
+  "bottleneckURL" : "/history/application_1665747708286_0136/ZettaProf/analysis/spill/"
+}, {
+  "bottleneckMessage" : "Data read imbalance causing imperfect parallel cpu resource utilisation and affecting application performance",
+  "severity" : "low",
+  "bottleneckMessageDetails" : "data skew problem is found in following queries: 2",
+  "queryIds" : [ 2 ],
+  "recommendations" : [ "Use salting on the skew key", "Keep AQE setting on" ],
+  "bottleneckURL" : "/history/application_1665747708286_0136/ZettaProf/analysis/skew/"
+}, {
+  "bottleneckMessage" : "Application runtime could be improved by 2.5X",
+  "severity" : "high",
+  "bottleneckMessageDetails" : "With increase of core count your application runtime could reduced from 3269.704s to 1326.089s",
+  "queryIds" : [ ],
+  "recommendations" : [ "Increase your core count from 15 to 30" ],
+  "bottleneckURL" : "/history/application_1665747708286_0136/ZettaProf/simulator"
+} ]
