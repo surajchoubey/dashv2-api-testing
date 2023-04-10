@@ -1,8 +1,8 @@
 {
-    "message": "39% of the available compute cores hours are getting wasted",
-    "cpuComputeAvailable": "4 h",
-    "cpuComputeUsed": "2.44 h",
-    "wastage": "39%",
-    "executorRuntime": "2.40 h",
-    "driverRuntime": "24 min"
-  }
+  "efficiencyMessage" : "18% of the available compute core hours are getting wasted",
+  "computeAvailable" : "7.2 h",
+  "computeUsed" : "5.9 h",
+  "wastage" : "18%",
+  "executorRuntime" : "5.9 h",
+  "driverRuntime" : "47 s"
+}
