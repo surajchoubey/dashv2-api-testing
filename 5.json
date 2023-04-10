@@ -1,8 +1,15 @@
-{
-	"bottleneckType": "your application is cpu and shuffle bound",
-	"recommendations": [
-	"You could reduce your application runtime to 9min by increasing cpu cores size from 16 to 32",
-	"Try to use shuffle service to improve shuffle runtime", 
-    "shuffle runtime could also improved by avoiding repartition or use of map side join in your application"
-    ]
-}
+[ {
+  "bottleneckMessage" : "Memory configuration is not optimal",
+  "severity" : "high",
+  "bottleneckMessageDetails" : "Your executor memory configuration is not optimal",
+  "queryIds" : [ ],
+  "recommendations" : [ "Current set executor memory: 6442450944", "Recommended executor memory: 4257218560" ],
+  "bottleneckURL" : "/history/application_1663134638334_0030/ZettaProf/analysis/utilization/"
+}, {
+  "bottleneckMessage" : "Application runtime could be improved by 1.9X",
+  "severity" : "high",
+  "bottleneckMessageDetails" : "With increase of core count your application runtime could reduced from 576.88s to 309.413s",
+  "queryIds" : [ ],
+  "recommendations" : [ "Increase your core count from 45 to 90" ],
+  "bottleneckURL" : "/history/application_1663134638334_0030/ZettaProf/simulator"
+} ]
