@@ -1,6 +1,6 @@
 {
-	"message": "You are wasting 13g of memory",
-	"memoryUnitAvailable": "25g",
-  "peakMemoryUsed": "12g",
-  "wastage": "13g" 
+  "efficiencyMessage" : "You are wasting 38.27 GB of allocated memory",
+  "memoryAvailable" : "54.0 GB",
+  "memoryUsed" : "15.73 GB",
+  "wastage" : "38.27 GB"
 }
