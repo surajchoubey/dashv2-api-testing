@@ -1,19 +1,28 @@
 {
-    "id": "application_24323_0021",
-    "submittedTime": "2023/03/09 15:30:44",
-    "duration": "15 min",
-    "status": {
-      "successfulQueriesCount": 3,
-      "failedQueriesCount": 1
+  "appId" : "application_1669702512847_0059",
+  "startTime" : "2022/12/08 17:00:46",
+  "duration" : "5.5 min",
+  "querySummary" : {
+    "statusCount" : {
+      "successCount" : 3,
+      "failedCount" : 0
     },
-    "runtime": {
-    "message": "5 out of 100 queries are taking 80% of your application runtime",
-      "runtimeDistribution": [
-        {"qid": 0, "duration": 0, "executorContribution": 0.7, "status": "success"},
-        {"qid": 1, "duration": 100, "executorContribution": 0.7, "status": "success"},
-        {"qid": 2, "duration": 200, "executorContribution": 0.9, "status": "success"},
-        {"qid": 3, "duration": 0, "executorContribution": 0, "status": "failed"},
-        {"qid": -1, "duration": 300, "executorContribution": 0.83, "status": "n/a"}
-      ]
-    }
+    "message" : "1 out of 3 queries are taking 99% of your application runtime",
+    "runtimeDistribution" : [ {
+      "qid" : 0,
+      "duration" : 3215,
+      "executorContribution" : 0.0,
+      "status" : "success"
+    }, {
+      "qid" : 1,
+      "duration" : 309563,
+      "executorContribution" : 1.0,
+      "status" : "success"
+    }, {
+      "qid" : 2,
+      "duration" : 186,
+      "executorContribution" : 1.0,
+      "status" : "success"
+    } ]
+  }
 }
