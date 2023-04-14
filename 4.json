@@ -4,7 +4,7 @@
   "bottleneckMessageDetails" : "spill problem is found in following queries: 2",
   "queryIds" : [ 2 ],
   "recommendations" : [ "use 8460 as shuffle partition size instead of 90 to avoid/reduce spill problem", "You could also increase your executor memory size to avoid spill" ],
-  "bottleneckURL" : "/history/application_1665747708286_0136/ZettaProf/analysis/spill/"
+  "bottleneckURL" : ""
 }, {
   "bottleneckMessage" : "Data read imbalance causing imperfect parallel cpu resource utilisation and affecting application performance",
   "severity" : "low",
