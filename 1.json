@@ -61,17 +61,7 @@
       "duration" : 342286,
       "executorContribution" : 1.0,
       "status" : "success"
-    }, {
-      "qid" : 11,
-      "duration" : 3250,
-      "executorContribution" : 0.0,
-      "status" : "success"
-    }, {
-      "qid" : 12,
-      "duration" : 178,
-      "executorContribution" : 1.0,
-      "status" : "success"
-    } 
-                            ]
+    }
+ ]
   }
 }
